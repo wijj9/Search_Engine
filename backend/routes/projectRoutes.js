@@ -1,7 +1,7 @@
 // backend/routes/projectRoutes.js
 const express = require('express');
 const router = express.Router();
-const Project = require('../models/Project');
+const Project = require('../models/projectModel');
 
 // GET all projects
 router.get('/', async (req, res) => {
