@@ -1,0 +1,104 @@
+/* Header.css */
+
+/* Global layout settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Important for placing global buttons */
+}
+
+/* Global buttons container */
+.global-buttons {
+    width: 100%;
+    position: absolute;
+    top: 10px; /* Positioned relative to the top of the page */
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to opposite ends */
+    z-index: 10;
+}
+
+.settings-button,
+.login-button {
+    font-size: 14px;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-button {
+    margin-right: 10px;
+}
+.settings-button {
+    margin-left: 10px;
+}
+
+.settings-button:hover,
+.login-button:hover {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Header container for logo and search bar */
+.header-container {
+    text-align: center;
+    margin-top: 80px; /* Provides breathing space from top */
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 500px;
+    border-radius: 15px;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #357ae8;
+}
